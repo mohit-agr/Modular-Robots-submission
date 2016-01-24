@@ -1,0 +1,14 @@
+#include "moveRobot.pt"
+
+
+const xpc_ParamMappingInfo  xpcparamsMMI[] =
+  {
+    {
+      {moveRobot_PT},
+      "moveRobot",
+      "",
+      "moveRobot",
+      0,
+      38,
+    },
+  };

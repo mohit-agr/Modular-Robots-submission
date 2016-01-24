@@ -1,0 +1,611 @@
+<?xml version="1.0" encoding="UTF-8"?><Root>
+
+          <SubSystem>
+    <Name>Del Error and Get State</Name>
+    <xPCName>moveRobot/Del Error and Get State</xPCName>
+        <SubSystem>
+    <Name>GetState</Name>
+    <xPCName>moveRobot/Del Error and Get State/GetState</xPCName>
+    
+    
+    </SubSystem>
+
+    
+
+ 
+            <block>
+            <blkName>Constant1</blkName>
+            <xpcblkName>Del Error and Get State/Constant1</xpcblkName>
+            <SLblockPath>moveRobot/Del Error and Get State/Constant1</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>Constant2</blkName>
+            <xpcblkName>Del Error and Get State/Constant2</xpcblkName>
+            <SLblockPath>moveRobot/Del Error and Get State/Constant2</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>Constant4</blkName>
+            <xpcblkName>Del Error and Get State/Constant4</xpcblkName>
+            <SLblockPath>moveRobot/Del Error and Get State/Constant4</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>Constant5</blkName>
+            <xpcblkName>Del Error and Get State/Constant5</xpcblkName>
+            <SLblockPath>moveRobot/Del Error and Get State/Constant5</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>Constant6</blkName>
+            <xpcblkName>Del Error and Get State/Constant6</xpcblkName>
+            <SLblockPath>moveRobot/Del Error and Get State/Constant6</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>Constant7</blkName>
+            <xpcblkName>Del Error and Get State/Constant7</xpcblkName>
+            <SLblockPath>moveRobot/Del Error and Get State/Constant7</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+
+
+ 
+            <block>
+            <blkName>Write (v3)2</blkName>
+            <xpcblkName>Del Error and Get State/Write (v3)2</xpcblkName>
+            <SLblockPath>moveRobot/Del Error and Get State/Write (v3)2</SLblockPath>
+            <isSrc>[0 2 0]</isSrc>
+          <parameter>
+          <paramName>P1</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P2</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P3</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P4</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P5</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P6</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P7</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P8</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P9</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>GetState</sigName>
+              <xpcsigName>Del Error and Get State/GetState</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+
+
+    
+    
+
+
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Constant4</sigName>
+              <xpcsigName>Del Error and Get State/Constant4</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+
+
+    
+    
+
+
+
+
+    
+    
+
+
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>CAN Pack</sigName>
+              <xpcsigName>Del Error and Get State/CAN Pack</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>CAN Pack2</sigName>
+              <xpcsigName>Del Error and Get State/CAN Pack2</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+    </SubSystem>
+    <SubSystem>
+    <Name>Scope (xPC) 1</Name>
+    <xPCName>moveRobot/Scope (xPC) 1</xPCName>
+    
+    
+
+
+    
+    
+
+
+    </SubSystem>
+    <SubSystem>
+    <Name>Triggered
+Subsystem1</Name>
+    <xPCName>moveRobot/Triggered Subsystem1</xPCName>
+    
+    
+ 
+            <block>
+            <blkName>Constant3</blkName>
+            <xpcblkName>Triggered Subsystem1/Constant3</xpcblkName>
+            <SLblockPath>moveRobot/Triggered Subsystem1/Constant3</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>Write (v3)1</blkName>
+            <xpcblkName>Triggered Subsystem1/Write (v3)1</xpcblkName>
+            <SLblockPath>moveRobot/Triggered Subsystem1/Write (v3)1</SLblockPath>
+            <isSrc>[0 2 0]</isSrc>
+          <parameter>
+          <paramName>P1</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P2</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P3</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P4</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P5</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P6</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P7</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P8</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P9</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Constant3</sigName>
+              <xpcsigName>Triggered Subsystem1/Constant3</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+    </SubSystem>
+    <SubSystem>
+    <Name>MATLAB Function</Name>
+    <xPCName>moveRobot/MATLAB Function</xPCName>
+    
+    
+    </SubSystem>
+    <SubSystem>
+    <Name>MATLAB Function2</Name>
+    <xPCName>moveRobot/MATLAB Function2</xPCName>
+    
+    
+    </SubSystem>
+    <SubSystem>
+    <Name>MovePos</Name>
+    <xPCName>moveRobot/MovePos</xPCName>
+    
+    
+    </SubSystem>
+
+      
+
+
+
+
+
+
+
+
+
+ 
+            <block>
+            <blkName>Setup (v3)</blkName>
+            <xpcblkName>Setup (v3)</xpcblkName>
+            <SLblockPath>moveRobot/Setup (v3)</SLblockPath>
+            <isSrc>[0 0 0]</isSrc>
+          <parameter>
+          <paramName>P1</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P2</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P3</paramName>
+          <dim>[1, 4]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P4</paramName>
+          <dim>[1, 4]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P5</paramName>
+          <dim>[1, 4]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P6</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P7</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P8</paramName>
+          <dim>[1, 4]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P9</paramName>
+          <dim>[1, 4]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P10</paramName>
+          <dim>[1, 4]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P11</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>Step</blkName>
+            <xpcblkName>Step</xpcblkName>
+            <SLblockPath>moveRobot/Step</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Time</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>Before</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>After</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+
+
+    
+
+
+    
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>MATLAB Function</sigName>
+              <xpcsigName>MATLAB Function</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>MATLAB Function2/p1</sigName>
+              <xpcsigName>MATLAB Function2/p1</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>MATLAB Function2/p2</sigName>
+              <xpcsigName>MATLAB Function2/p2</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>MovePos</sigName>
+              <xpcsigName>MovePos</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Clock1</sigName>
+              <xpcsigName>Clock1</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Data Type Conversion</sigName>
+              <xpcsigName>Data Type Conversion</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>CAN Pack1</sigName>
+              <xpcsigName>CAN Pack1</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Step</sigName>
+              <xpcsigName>Step</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+</Root>

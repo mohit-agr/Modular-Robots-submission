@@ -1,0 +1,17 @@
+#include "moveRobot.bio"
+#include "moveRobot.lbl"
+#include "moveRobot.sid"
+
+
+const xpc_SigMappingInfo xpcMMI[] =
+  {
+    {
+      {moveRobot_BIO},
+      {moveRobot_SID},
+      {moveRobot_LBL},
+      "",
+      "moveRobot",
+      0,
+      12,
+    },
+  };

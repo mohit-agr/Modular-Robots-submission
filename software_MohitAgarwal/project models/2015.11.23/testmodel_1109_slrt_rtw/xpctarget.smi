@@ -1,0 +1,17 @@
+#include "testmodel_1109.bio"
+#include "testmodel_1109.lbl"
+#include "testmodel_1109.sid"
+
+
+const xpc_SigMappingInfo xpcMMI[] =
+  {
+    {
+      {testmodel_1109_BIO},
+      {testmodel_1109_SID},
+      {testmodel_1109_LBL},
+      "",
+      "testmodel_1109",
+      0,
+      107,
+    },
+  };

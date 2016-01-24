@@ -1,0 +1,14 @@
+#include "testmodel_1109.pt"
+
+
+const xpc_ParamMappingInfo  xpcparamsMMI[] =
+  {
+    {
+      {testmodel_1109_PT},
+      "testmodel_1109",
+      "",
+      "testmodel_1109",
+      0,
+      146,
+    },
+  };

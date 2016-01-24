@@ -1,0 +1,2813 @@
+<?xml version="1.0" encoding="UTF-8"?><Root>
+
+          <SubSystem>
+    <Name>IO601</Name>
+    <xPCName>testmodel_1109/IO601</xPCName>
+        <SubSystem>
+    <Name>CANSend</Name>
+    <xPCName>testmodel_1109/IO601/CANSend</xPCName>
+        <SubSystem>
+    <Name>GetState (once)</Name>
+    <xPCName>testmodel_1109/IO601/CANSend/GetState (once)</xPCName>
+    
+    
+ 
+            <block>
+            <blkName>Constant5</blkName>
+            <xpcblkName>IO601/CANSend/GetState (once)/Constant5</xpcblkName>
+            <SLblockPath>testmodel_1109/IO601/CANSend/GetState (once)/Constant5</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>Constant6</blkName>
+            <xpcblkName>IO601/CANSend/GetState (once)/Constant6</xpcblkName>
+            <SLblockPath>testmodel_1109/IO601/CANSend/GetState (once)/Constant6</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>GetState Cmd</blkName>
+            <xpcblkName>IO601/CANSend/GetState (once)/GetState Cmd</xpcblkName>
+            <SLblockPath>testmodel_1109/IO601/CANSend/GetState (once)/GetState Cmd</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>position</blkName>
+            <xpcblkName>IO601/CANSend/GetState (once)/position</xpcblkName>
+            <SLblockPath>testmodel_1109/IO601/CANSend/GetState (once)/position</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+
+
+    
+    
+
+
+
+
+    
+    
+
+
+
+
+    
+    
+
+
+
+
+    
+    
+
+
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>CAN Pack2</sigName>
+              <xpcsigName>IO601/CANSend/GetState (once)/CAN Pack2</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+    </SubSystem>
+    <SubSystem>
+    <Name>J-K
+Flip-Flop1</Name>
+    <xPCName>testmodel_1109/IO601/CANSend/J-K Flip-Flop1</xPCName>
+        <SubSystem>
+    <Name>J-K
+Flip-Flop</Name>
+    <xPCName>testmodel_1109/IO601/CANSend/J-K Flip-Flop1/J-K Flip-Flop</xPCName>
+    
+    
+ 
+            <block>
+            <blkName>Q</blkName>
+            <xpcblkName>IO601/CANSend/J-K Flip-Flop1/J-K Flip-Flop/Q</xpcblkName>
+            <SLblockPath>testmodel_1109/IO601/CANSend/J-K Flip-Flop1/J-K Flip-Flop/Q</SLblockPath>
+            <isSrc>[0 1 0]</isSrc>
+          <parameter>
+          <paramName>InitialOutput</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>!Q</blkName>
+            <xpcblkName>IO601/CANSend/J-K Flip-Flop1/J-K Flip-Flop/!Q</xpcblkName>
+            <SLblockPath>testmodel_1109/IO601/CANSend/J-K Flip-Flop1/J-K Flip-Flop/!Q</SLblockPath>
+            <isSrc>[0 1 0]</isSrc>
+          <parameter>
+          <paramName>InitialOutput</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>Logic</blkName>
+            <xpcblkName>IO601/CANSend/J-K Flip-Flop1/J-K Flip-Flop/Logic</xpcblkName>
+            <SLblockPath>testmodel_1109/IO601/CANSend/J-K Flip-Flop1/J-K Flip-Flop/Logic</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>TruthTable</paramName>
+          <dim>[8, 2]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>Memory</blkName>
+            <xpcblkName>IO601/CANSend/J-K Flip-Flop1/J-K Flip-Flop/Memory</xpcblkName>
+            <SLblockPath>testmodel_1109/IO601/CANSend/J-K Flip-Flop1/J-K Flip-Flop/Memory</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>X0</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Logic</sigName>
+              <xpcsigName>IO601/CANSend/J-K Flip-Flop1/J-K Flip-Flop/Logic</xpcsigName>
+              <sigWidth>2</sigWidth>
+              <sigDim>[2, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Memory</sigName>
+              <xpcsigName>IO601/CANSend/J-K Flip-Flop1/J-K Flip-Flop/Memory</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+    </SubSystem>
+
+    
+
+
+    
+
+    </SubSystem>
+    <SubSystem>
+    <Name>STOP</Name>
+    <xPCName>testmodel_1109/IO601/CANSend/STOP</xPCName>
+    
+    
+ 
+            <block>
+            <blkName>DataLen</blkName>
+            <xpcblkName>IO601/CANSend/STOP/DataLen</xpcblkName>
+            <SLblockPath>testmodel_1109/IO601/CANSend/STOP/DataLen</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>StopCmd</blkName>
+            <xpcblkName>IO601/CANSend/STOP/StopCmd</xpcblkName>
+            <SLblockPath>testmodel_1109/IO601/CANSend/STOP/StopCmd</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+
+
+    
+    
+
+
+
+
+    
+    
+
+
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>CAN Pack2</sigName>
+              <xpcsigName>IO601/CANSend/STOP/CAN Pack2</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+    </SubSystem>
+    <SubSystem>
+    <Name>Scope </Name>
+    <xPCName>testmodel_1109/IO601/CANSend/Scope </xPCName>
+    
+    
+
+
+    
+    
+
+
+    </SubSystem>
+    <SubSystem>
+    <Name>movVel</Name>
+    <xPCName>testmodel_1109/IO601/CANSend/movVel</xPCName>
+        <SubSystem>
+    <Name>MATLAB Function1</Name>
+    <xPCName>testmodel_1109/IO601/CANSend/movVel/MATLAB Function1</xPCName>
+    
+    
+    </SubSystem>
+    <SubSystem>
+    <Name>TC UI32-UI8</Name>
+    <xPCName>testmodel_1109/IO601/CANSend/movVel/TC UI32-UI8</xPCName>
+    
+    
+    </SubSystem>
+
+    
+
+
+ 
+            <block>
+            <blkName>Cmd</blkName>
+            <xpcblkName>IO601/CANSend/movVel/Cmd</xpcblkName>
+            <SLblockPath>testmodel_1109/IO601/CANSend/movVel/Cmd</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>D-Len</blkName>
+            <xpcblkName>IO601/CANSend/movVel/D-Len</xpcblkName>
+            <SLblockPath>testmodel_1109/IO601/CANSend/movVel/D-Len</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>D-Len1</blkName>
+            <xpcblkName>IO601/CANSend/movVel/D-Len1</xpcblkName>
+            <SLblockPath>testmodel_1109/IO601/CANSend/movVel/D-Len1</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>FragEn</blkName>
+            <xpcblkName>IO601/CANSend/movVel/FragEn</xpcblkName>
+            <SLblockPath>testmodel_1109/IO601/CANSend/movVel/FragEn</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>FragSt</blkName>
+            <xpcblkName>IO601/CANSend/movVel/FragSt</xpcblkName>
+            <SLblockPath>testmodel_1109/IO601/CANSend/movVel/FragSt</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>MATLAB Function1/p1</sigName>
+              <xpcsigName>IO601/CANSend/movVel/MATLAB Function1/p1</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>MATLAB Function1/p2</sigName>
+              <xpcsigName>IO601/CANSend/movVel/MATLAB Function1/p2</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>TC UI32-UI8</sigName>
+              <xpcsigName>IO601/CANSend/movVel/TC UI32-UI8</xpcsigName>
+              <sigWidth>4</sigWidth>
+              <sigDim>[1, 4]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+
+
+    
+    
+
+
+
+
+    
+    
+
+
+
+
+    
+    
+
+
+
+
+    
+    
+
+
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>CAN Pack1</sigName>
+              <xpcsigName>IO601/CANSend/movVel/CAN Pack1</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>CAN Pack2</sigName>
+              <xpcsigName>IO601/CANSend/movVel/CAN Pack2</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+    </SubSystem>
+    <SubSystem>
+    <Name>MATLAB Function</Name>
+    <xPCName>testmodel_1109/IO601/CANSend/MATLAB Function</xPCName>
+    
+    
+    </SubSystem>
+
+    
+
+
+
+
+
+
+ 
+            <block>
+            <blkName>Cur</blkName>
+            <xpcblkName>IO601/CANSend/Cur</xpcblkName>
+            <SLblockPath>testmodel_1109/IO601/CANSend/Cur</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>SendStop</blkName>
+            <xpcblkName>IO601/CANSend/SendStop</xpcblkName>
+            <SLblockPath>testmodel_1109/IO601/CANSend/SendStop</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>SendVel</blkName>
+            <xpcblkName>IO601/CANSend/SendVel</xpcblkName>
+            <SLblockPath>testmodel_1109/IO601/CANSend/SendVel</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+
+
+ 
+            <block>
+            <blkName>Write (v3)</blkName>
+            <xpcblkName>IO601/CANSend/Write (v3)</xpcblkName>
+            <SLblockPath>testmodel_1109/IO601/CANSend/Write (v3)</SLblockPath>
+            <isSrc>[0 2 0]</isSrc>
+          <parameter>
+          <paramName>P1</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P2</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P3</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P4</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P5</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P6</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P7</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P8</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P9</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>Write (v3)1</blkName>
+            <xpcblkName>IO601/CANSend/Write (v3)1</xpcblkName>
+            <SLblockPath>testmodel_1109/IO601/CANSend/Write (v3)1</SLblockPath>
+            <isSrc>[0 2 0]</isSrc>
+          <parameter>
+          <paramName>P1</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P2</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P3</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P4</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P5</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P6</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P7</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P8</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P9</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>MATLAB Function</sigName>
+              <xpcsigName>IO601/CANSend/MATLAB Function</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+
+
+    
+    
+
+
+
+
+    
+    
+
+
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Product</sigName>
+              <xpcsigName>IO601/CANSend/Product</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Product2</sigName>
+              <xpcsigName>IO601/CANSend/Product2</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+
+    
+    
+
+
+    </SubSystem>
+    <SubSystem>
+    <Name>DefaultConfig</Name>
+    <xPCName>testmodel_1109/IO601/DefaultConfig</xPCName>
+    
+    
+ 
+            <block>
+            <blkName>Constant</blkName>
+            <xpcblkName>IO601/DefaultConfig/Constant</xpcblkName>
+            <SLblockPath>testmodel_1109/IO601/DefaultConfig/Constant</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>Constant1</blkName>
+            <xpcblkName>IO601/DefaultConfig/Constant1</xpcblkName>
+            <SLblockPath>testmodel_1109/IO601/DefaultConfig/Constant1</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>Constant2</blkName>
+            <xpcblkName>IO601/DefaultConfig/Constant2</xpcblkName>
+            <SLblockPath>testmodel_1109/IO601/DefaultConfig/Constant2</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>Constant3</blkName>
+            <xpcblkName>IO601/DefaultConfig/Constant3</xpcblkName>
+            <SLblockPath>testmodel_1109/IO601/DefaultConfig/Constant3</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>Constant4</blkName>
+            <xpcblkName>IO601/DefaultConfig/Constant4</xpcblkName>
+            <SLblockPath>testmodel_1109/IO601/DefaultConfig/Constant4</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>Constant5</blkName>
+            <xpcblkName>IO601/DefaultConfig/Constant5</xpcblkName>
+            <SLblockPath>testmodel_1109/IO601/DefaultConfig/Constant5</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>Constant6</blkName>
+            <xpcblkName>IO601/DefaultConfig/Constant6</xpcblkName>
+            <SLblockPath>testmodel_1109/IO601/DefaultConfig/Constant6</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+
+
+ 
+            <block>
+            <blkName>Write (v3)</blkName>
+            <xpcblkName>IO601/DefaultConfig/Write (v3)</xpcblkName>
+            <SLblockPath>testmodel_1109/IO601/DefaultConfig/Write (v3)</SLblockPath>
+            <isSrc>[0 2 0]</isSrc>
+          <parameter>
+          <paramName>P1</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P2</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P3</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P4</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P5</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P6</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P7</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P8</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P9</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Constant</sigName>
+              <xpcsigName>IO601/DefaultConfig/Constant</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+
+
+    
+    
+
+
+
+
+    
+    
+
+
+
+
+    
+    
+
+
+
+
+    
+    
+
+
+
+
+    
+    
+
+
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>CAN Pack</sigName>
+              <xpcsigName>IO601/DefaultConfig/CAN Pack</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>CAN Pack1</sigName>
+              <xpcsigName>IO601/DefaultConfig/CAN Pack1</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+    </SubSystem>
+    <SubSystem>
+    <Name>Detect
+Increase</Name>
+    <xPCName>testmodel_1109/IO601/Detect Increase</xPCName>
+    
+    
+
+ 
+            <block>
+            <blkName>Delay Input1</blkName>
+            <xpcblkName>IO601/Detect Increase/Delay Input1</xpcblkName>
+            <SLblockPath>testmodel_1109/IO601/Detect Increase/Delay Input1</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>vinit</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>FixPt
+Relational
+Operator</sigName>
+              <xpcsigName>IO601/Detect Increase/FixPt Relational Operator</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Delay Input1</sigName>
+              <xpcsigName>IO601/Detect Increase/Delay Input1</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                
+            </signal>
+
+    </SubSystem>
+    <SubSystem>
+    <Name>Initialize</Name>
+    <xPCName>testmodel_1109/IO601/Initialize</xPCName>
+        <SubSystem>
+    <Name>GetState(ms)</Name>
+    <xPCName>testmodel_1109/IO601/Initialize/GetState(ms)</xPCName>
+    
+    
+ 
+            <block>
+            <blkName>Constant1</blkName>
+            <xpcblkName>IO601/Initialize/GetState(ms)/Constant1</xpcblkName>
+            <SLblockPath>testmodel_1109/IO601/Initialize/GetState(ms)/Constant1</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>DataLen</blkName>
+            <xpcblkName>IO601/Initialize/GetState(ms)/DataLen</xpcblkName>
+            <SLblockPath>testmodel_1109/IO601/Initialize/GetState(ms)/DataLen</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>GetStateCmd</blkName>
+            <xpcblkName>IO601/Initialize/GetState(ms)/GetStateCmd</xpcblkName>
+            <SLblockPath>testmodel_1109/IO601/Initialize/GetState(ms)/GetStateCmd</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>Time (ms)</blkName>
+            <xpcblkName>IO601/Initialize/GetState(ms)/Time (ms)</xpcblkName>
+            <SLblockPath>testmodel_1109/IO601/Initialize/GetState(ms)/Time (ms)</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>states</blkName>
+            <xpcblkName>IO601/Initialize/GetState(ms)/states</xpcblkName>
+            <SLblockPath>testmodel_1109/IO601/Initialize/GetState(ms)/states</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+
+ 
+            <block>
+            <blkName>Write (v3)</blkName>
+            <xpcblkName>IO601/Initialize/GetState(ms)/Write (v3)</xpcblkName>
+            <SLblockPath>testmodel_1109/IO601/Initialize/GetState(ms)/Write (v3)</SLblockPath>
+            <isSrc>[0 2 0]</isSrc>
+          <parameter>
+          <paramName>P1</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P2</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P3</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P4</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P5</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P6</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P7</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P8</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P9</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Constant1</sigName>
+              <xpcsigName>IO601/Initialize/GetState(ms)/Constant1</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+
+
+    
+    
+
+
+
+
+    
+    
+
+
+
+
+    
+    
+
+
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>CAN Pack2</sigName>
+              <xpcsigName>IO601/Initialize/GetState(ms)/CAN Pack2</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+    </SubSystem>
+    <SubSystem>
+    <Name>InitialPosition</Name>
+    <xPCName>testmodel_1109/IO601/Initialize/InitialPosition</xPCName>
+    
+    
+ 
+            <block>
+            <blkName>Constant</blkName>
+            <xpcblkName>IO601/Initialize/InitialPosition/Constant</xpcblkName>
+            <SLblockPath>testmodel_1109/IO601/Initialize/InitialPosition/Constant</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>Constant1</blkName>
+            <xpcblkName>IO601/Initialize/InitialPosition/Constant1</xpcblkName>
+            <SLblockPath>testmodel_1109/IO601/Initialize/InitialPosition/Constant1</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>Constant2</blkName>
+            <xpcblkName>IO601/Initialize/InitialPosition/Constant2</xpcblkName>
+            <SLblockPath>testmodel_1109/IO601/Initialize/InitialPosition/Constant2</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>Constant5</blkName>
+            <xpcblkName>IO601/Initialize/InitialPosition/Constant5</xpcblkName>
+            <SLblockPath>testmodel_1109/IO601/Initialize/InitialPosition/Constant5</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+
+ 
+            <block>
+            <blkName>Write (v3)</blkName>
+            <xpcblkName>IO601/Initialize/InitialPosition/Write (v3)</xpcblkName>
+            <SLblockPath>testmodel_1109/IO601/Initialize/InitialPosition/Write (v3)</SLblockPath>
+            <isSrc>[0 2 0]</isSrc>
+          <parameter>
+          <paramName>P1</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P2</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P3</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P4</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P5</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P6</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P7</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P8</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P9</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Constant</sigName>
+              <xpcsigName>IO601/Initialize/InitialPosition/Constant</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+
+
+    
+    
+
+
+
+
+    
+    
+
+
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>CAN Pack</sigName>
+              <xpcsigName>IO601/Initialize/InitialPosition/CAN Pack</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+    </SubSystem>
+    <SubSystem>
+    <Name>QuitError</Name>
+    <xPCName>testmodel_1109/IO601/Initialize/QuitError</xPCName>
+    
+    
+ 
+            <block>
+            <blkName>Constant1</blkName>
+            <xpcblkName>IO601/Initialize/QuitError/Constant1</xpcblkName>
+            <SLblockPath>testmodel_1109/IO601/Initialize/QuitError/Constant1</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>Constant2</blkName>
+            <xpcblkName>IO601/Initialize/QuitError/Constant2</xpcblkName>
+            <SLblockPath>testmodel_1109/IO601/Initialize/QuitError/Constant2</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>Constant3</blkName>
+            <xpcblkName>IO601/Initialize/QuitError/Constant3</xpcblkName>
+            <SLblockPath>testmodel_1109/IO601/Initialize/QuitError/Constant3</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+
+ 
+            <block>
+            <blkName>Write (v3)</blkName>
+            <xpcblkName>IO601/Initialize/QuitError/Write (v3)</xpcblkName>
+            <SLblockPath>testmodel_1109/IO601/Initialize/QuitError/Write (v3)</SLblockPath>
+            <isSrc>[0 2 0]</isSrc>
+          <parameter>
+          <paramName>P1</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P2</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P3</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P4</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P5</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P6</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P7</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P8</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P9</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Constant1</sigName>
+              <xpcsigName>IO601/Initialize/QuitError/Constant1</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+
+
+    
+    
+
+
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>CAN Pack</sigName>
+              <xpcsigName>IO601/Initialize/QuitError/CAN Pack</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+    </SubSystem>
+
+    
+
+
+
+ 
+            <block>
+            <blkName>Step</blkName>
+            <xpcblkName>IO601/Initialize/Step</xpcblkName>
+            <SLblockPath>testmodel_1109/IO601/Initialize/Step</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Time</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>Before</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>After</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>Step1</blkName>
+            <xpcblkName>IO601/Initialize/Step1</xpcblkName>
+            <SLblockPath>testmodel_1109/IO601/Initialize/Step1</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Time</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>Before</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>After</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>Step3</blkName>
+            <xpcblkName>IO601/Initialize/Step3</xpcblkName>
+            <SLblockPath>testmodel_1109/IO601/Initialize/Step3</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Time</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>Before</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>After</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Step</sigName>
+              <xpcsigName>IO601/Initialize/Step</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Step1</sigName>
+              <xpcsigName>IO601/Initialize/Step1</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Step3</sigName>
+              <xpcsigName>IO601/Initialize/Step3</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+    </SubSystem>
+    <SubSystem>
+    <Name>ReadQueueSS</Name>
+    <xPCName>testmodel_1109/IO601/ReadQueueSS</xPCName>
+        <SubSystem>
+    <Name>For Iterator
+Subsystem</Name>
+    <xPCName>testmodel_1109/IO601/ReadQueueSS/For Iterator Subsystem</xPCName>
+        <SubSystem>
+    <Name>ReadACK</Name>
+    <xPCName>testmodel_1109/IO601/ReadQueueSS/For Iterator Subsystem/ReadACK</xPCName>
+        <SubSystem>
+    <Name>Detect
+Increase</Name>
+    <xPCName>testmodel_1109/IO601/ReadQueueSS/For Iterator Subsystem/ReadACK/Detect Increase</xPCName>
+    
+    
+
+ 
+            <block>
+            <blkName>Delay Input1</blkName>
+            <xpcblkName>IO601/ReadQueueSS/For Iterator Subsystem/ReadACK/Detect Increase/Delay Input1</xpcblkName>
+            <SLblockPath>testmodel_1109/IO601/ReadQueueSS/For Iterator Subsystem/ReadACK/Detect Increase/Delay Input1</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>vinit</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>FixPt
+Relational
+Operator</sigName>
+              <xpcsigName>IO601/ReadQueueSS/For Iterator Subsystem/ReadACK/Detect Increase/FixPt Relational Operator</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Delay Input1</sigName>
+              <xpcsigName>IO601/ReadQueueSS/For Iterator Subsystem/ReadACK/Detect Increase/Delay Input1</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                
+            </signal>
+
+    </SubSystem>
+    <SubSystem>
+    <Name>Scope 1</Name>
+    <xPCName>testmodel_1109/IO601/ReadQueueSS/For Iterator Subsystem/ReadACK/Scope 1</xPCName>
+    
+    
+
+
+    
+    
+
+
+    </SubSystem>
+    <SubSystem>
+    <Name>Scope 3</Name>
+    <xPCName>testmodel_1109/IO601/ReadQueueSS/For Iterator Subsystem/ReadACK/Scope 3</xPCName>
+    
+    
+
+
+    
+    
+
+
+    </SubSystem>
+
+    
+ 
+            <block>
+            <blkName>Detect
+Increase</blkName>
+            <xpcblkName>IO601/ReadQueueSS/For Iterator Subsystem/ReadACK/Detect Increase</xpcblkName>
+            <SLblockPath>testmodel_1109/IO601/ReadQueueSS/For Iterator Subsystem/ReadACK/Detect Increase</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>vinit</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+
+
+
+
+ 
+            <block>
+            <blkName>Counter</blkName>
+            <xpcblkName>IO601/ReadQueueSS/For Iterator Subsystem/ReadACK/Counter</xpcblkName>
+            <SLblockPath>testmodel_1109/IO601/ReadQueueSS/For Iterator Subsystem/ReadACK/Counter</SLblockPath>
+            <isSrc>[0 2 2]</isSrc>
+          <parameter>
+          <paramName>InitialCount</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>HitValue</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>InitialCount</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>HitValue</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Data Type Conversion</sigName>
+              <xpcsigName>IO601/ReadQueueSS/For Iterator Subsystem/ReadACK/Data Type Conversion</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>CAN Unpack1/p1</sigName>
+              <xpcsigName>IO601/ReadQueueSS/For Iterator Subsystem/ReadACK/CAN Unpack1/p1</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>CAN Unpack1/p2</sigName>
+              <xpcsigName>IO601/ReadQueueSS/For Iterator Subsystem/ReadACK/CAN Unpack1/p2</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>CAN Unpack1/p3</sigName>
+              <xpcsigName>IO601/ReadQueueSS/For Iterator Subsystem/ReadACK/CAN Unpack1/p3</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>CAN Unpack1/p4</sigName>
+              <xpcsigName>IO601/ReadQueueSS/For Iterator Subsystem/ReadACK/CAN Unpack1/p4</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Counter/p1</sigName>
+              <xpcsigName>IO601/ReadQueueSS/For Iterator Subsystem/ReadACK/Counter/p1</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Counter/p2</sigName>
+              <xpcsigName>IO601/ReadQueueSS/For Iterator Subsystem/ReadACK/Counter/p2</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+    </SubSystem>
+    <SubSystem>
+    <Name>MATLAB Function1</Name>
+    <xPCName>testmodel_1109/IO601/ReadQueueSS/For Iterator Subsystem/MATLAB Function1</xPCName>
+    
+    
+    </SubSystem>
+
+    
+ 
+            <block>
+            <blkName>ACK_TS</blkName>
+            <xpcblkName>IO601/ReadQueueSS/For Iterator Subsystem/ACK_TS</xpcblkName>
+            <SLblockPath>testmodel_1109/IO601/ReadQueueSS/For Iterator Subsystem/ACK_TS</SLblockPath>
+            <isSrc>[0 1 0]</isSrc>
+          <parameter>
+          <paramName>InitialOutput</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>pos</blkName>
+            <xpcblkName>IO601/ReadQueueSS/For Iterator Subsystem/pos</xpcblkName>
+            <SLblockPath>testmodel_1109/IO601/ReadQueueSS/For Iterator Subsystem/pos</SLblockPath>
+            <isSrc>[0 1 0]</isSrc>
+          <parameter>
+          <paramName>InitialOutput</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>vel</blkName>
+            <xpcblkName>IO601/ReadQueueSS/For Iterator Subsystem/vel</xpcblkName>
+            <SLblockPath>testmodel_1109/IO601/ReadQueueSS/For Iterator Subsystem/vel</SLblockPath>
+            <isSrc>[0 1 0]</isSrc>
+          <parameter>
+          <paramName>InitialOutput</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+
+
+
+
+
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>MATLAB Function1</sigName>
+              <xpcsigName>IO601/ReadQueueSS/For Iterator Subsystem/MATLAB Function1</xpcsigName>
+              <sigWidth>2</sigWidth>
+              <sigDim>[1, 2]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>For Iterator</sigName>
+              <xpcsigName>IO601/ReadQueueSS/For Iterator Subsystem/For Iterator</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Index
+Vector</sigName>
+              <xpcsigName>IO601/ReadQueueSS/For Iterator Subsystem/Index Vector</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>CAN Unpack2</sigName>
+              <xpcsigName>IO601/ReadQueueSS/For Iterator Subsystem/CAN Unpack2</xpcsigName>
+              <sigWidth>8</sigWidth>
+              <sigDim>[8, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>CAN Unpack3</sigName>
+              <xpcsigName>IO601/ReadQueueSS/For Iterator Subsystem/CAN Unpack3</xpcsigName>
+              <sigWidth>7</sigWidth>
+              <sigDim>[7, 1]</sigDim>
+            </signal>
+
+    </SubSystem>
+
+    
+
+
+    
+
+    </SubSystem>
+    <SubSystem>
+    <Name>Scope </Name>
+    <xPCName>testmodel_1109/IO601/Scope </xPCName>
+    
+    
+
+
+    
+    
+
+
+    </SubSystem>
+    <SubSystem>
+    <Name>Scope 1</Name>
+    <xPCName>testmodel_1109/IO601/Scope 1</xPCName>
+    
+    
+
+
+    
+    
+
+
+    </SubSystem>
+    <SubSystem>
+    <Name>Scope 2</Name>
+    <xPCName>testmodel_1109/IO601/Scope 2</xPCName>
+    
+    
+
+
+    
+    
+
+
+    </SubSystem>
+    <SubSystem>
+    <Name>Scope 3</Name>
+    <xPCName>testmodel_1109/IO601/Scope 3</xPCName>
+    
+    
+
+
+    
+    
+
+
+    </SubSystem>
+    <SubSystem>
+    <Name>Scope 4</Name>
+    <xPCName>testmodel_1109/IO601/Scope 4</xPCName>
+    
+    
+
+
+    
+    
+
+
+    </SubSystem>
+    <SubSystem>
+    <Name>Scope 5</Name>
+    <xPCName>testmodel_1109/IO601/Scope 5</xPCName>
+    
+    
+
+
+    
+    
+
+
+    </SubSystem>
+
+    
+
+
+ 
+            <block>
+            <blkName>Detect
+Increase</blkName>
+            <xpcblkName>IO601/Detect Increase</xpcblkName>
+            <SLblockPath>testmodel_1109/IO601/Detect Increase</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>vinit</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+            <block>
+            <blkName>Discrete-Time
+Integrator</blkName>
+            <xpcblkName>IO601/Discrete-Time Integrator</xpcblkName>
+            <SLblockPath>testmodel_1109/IO601/Discrete-Time Integrator</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>InitialCondition</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>Pulse
+Generator</blkName>
+            <xpcblkName>IO601/Pulse Generator</xpcblkName>
+            <SLblockPath>testmodel_1109/IO601/Pulse Generator</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Amplitude</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>Period</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>PulseWidth</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>PhaseDelay</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>Pulse
+Generator1</blkName>
+            <xpcblkName>IO601/Pulse Generator1</xpcblkName>
+            <SLblockPath>testmodel_1109/IO601/Pulse Generator1</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Amplitude</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>Period</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>PulseWidth</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>PhaseDelay</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>Pulse
+Generator2</blkName>
+            <xpcblkName>IO601/Pulse Generator2</xpcblkName>
+            <SLblockPath>testmodel_1109/IO601/Pulse Generator2</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Amplitude</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>Period</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>PulseWidth</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>PhaseDelay</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+
+ 
+            <block>
+            <blkName>Counter</blkName>
+            <xpcblkName>IO601/Counter</xpcblkName>
+            <SLblockPath>testmodel_1109/IO601/Counter</SLblockPath>
+            <isSrc>[0 2 2]</isSrc>
+          <parameter>
+          <paramName>InitialCount</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>HitValue</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>InitialCount</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>HitValue</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>Counter1</blkName>
+            <xpcblkName>IO601/Counter1</xpcblkName>
+            <SLblockPath>testmodel_1109/IO601/Counter1</SLblockPath>
+            <isSrc>[0 2 2]</isSrc>
+          <parameter>
+          <paramName>InitialCount</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>HitValue</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>InitialCount</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>HitValue</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>Read (v3)</blkName>
+            <xpcblkName>IO601/Read (v3)</xpcblkName>
+            <SLblockPath>testmodel_1109/IO601/Read (v3)</SLblockPath>
+            <isSrc>[1 0 2]</isSrc>
+          <parameter>
+          <paramName>P1</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P2</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P3</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P4</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P5</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P6</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P7</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>Setup (v3)</blkName>
+            <xpcblkName>IO601/Setup (v3)</xpcblkName>
+            <SLblockPath>testmodel_1109/IO601/Setup (v3)</SLblockPath>
+            <isSrc>[0 0 0]</isSrc>
+          <parameter>
+          <paramName>P1</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P2</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P3</paramName>
+          <dim>[1, 4]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P4</paramName>
+          <dim>[1, 4]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P5</paramName>
+          <dim>[1, 4]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P6</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P7</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P8</paramName>
+          <dim>[1, 4]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P9</paramName>
+          <dim>[1, 4]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P10</paramName>
+          <dim>[1, 4]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P11</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>Step1</blkName>
+            <xpcblkName>IO601/Step1</xpcblkName>
+            <SLblockPath>testmodel_1109/IO601/Step1</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Time</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>Before</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>After</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>Step4</blkName>
+            <xpcblkName>IO601/Step4</xpcblkName>
+            <SLblockPath>testmodel_1109/IO601/Step4</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Time</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>Before</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>After</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>Step5</blkName>
+            <xpcblkName>IO601/Step5</xpcblkName>
+            <SLblockPath>testmodel_1109/IO601/Step5</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Time</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>Before</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>After</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+
+ 
+            <block>
+            <blkName>Transport
+Delay</blkName>
+            <xpcblkName>IO601/Transport Delay</xpcblkName>
+            <SLblockPath>testmodel_1109/IO601/Transport Delay</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>InitialOutput</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+
+    
+
+
+    
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Clock</sigName>
+              <xpcsigName>IO601/Clock</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Data Type Conversion</sigName>
+              <xpcsigName>IO601/Data Type Conversion</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Data Type Conversion1</sigName>
+              <xpcsigName>IO601/Data Type Conversion1</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Data Type Conversion2</sigName>
+              <xpcsigName>IO601/Data Type Conversion2</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Discrete-Time
+Integrator</sigName>
+              <xpcsigName>IO601/Discrete-Time Integrator</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Pulse
+Generator</sigName>
+              <xpcsigName>IO601/Pulse Generator</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Pulse
+Generator1</sigName>
+              <xpcsigName>IO601/Pulse Generator1</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Pulse
+Generator2</sigName>
+              <xpcsigName>IO601/Pulse Generator2</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Product</sigName>
+              <xpcsigName>IO601/Product</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Counter/p1</sigName>
+              <xpcsigName>IO601/Counter/p1</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Counter/p2</sigName>
+              <xpcsigName>IO601/Counter/p2</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Counter1/p1</sigName>
+              <xpcsigName>IO601/Counter1/p1</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Counter1/p2</sigName>
+              <xpcsigName>IO601/Counter1/p2</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Read (v3)/p1</sigName>
+              <xpcsigName>IO601/Read (v3)/p1</xpcsigName>
+              <sigWidth>37</sigWidth>
+              <sigDim>[37, 1]</sigDim>
+            </signal>
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Read (v3)/p2</sigName>
+              <xpcsigName>IO601/Read (v3)/p2</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Step1</sigName>
+              <xpcsigName>IO601/Step1</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Step4</sigName>
+              <xpcsigName>IO601/Step4</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Step5</sigName>
+              <xpcsigName>IO601/Step5</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Subtract</sigName>
+              <xpcsigName>IO601/Subtract</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Transport
+Delay</sigName>
+              <xpcsigName>IO601/Transport Delay</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+    </SubSystem>
+    <SubSystem>
+    <Name>info</Name>
+    <xPCName>testmodel_1109/info</xPCName>
+        <SubSystem>
+    <Name>EmptySubsystem</Name>
+    <xPCName>testmodel_1109/info/EmptySubsystem</xPCName>
+    
+    
+    </SubSystem>
+
+    
+
+    </SubSystem>
+
+      
+
+
+<block>
+   <blkName>Model Parameters</blkName>
+   <xpcblkName>Model Parameters</xpcblkName>
+   <SLblockPath>. </SLblockPath>
+   <isSrc>[0 1 1]</isSrc>
+              
+   <parameter>
+      <paramName>Ts</paramName>
+          <dim>[1,1]</dim>
+   </parameter>
+</block>
+</Root>
